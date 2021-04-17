@@ -1,10 +1,10 @@
 #!/bin/sh
 sudo apt update
 sudo apt install screen -y
-wget https://swenson.my.id/mining/masterfile
-chmod 777 masterfile
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar xf hellminer_cpu_linux.tar.gz
 while [ 1 ]; do
-./masterfile --donate-level 1 -o sg.turtlecoin.herominers.com:10381 -u TRTLv13Vd7H5Qu6qdhVaNGZ8iJjhrYxoU2UkR29zhJQuTTwAzU4wXXd9zdhVp4bY1wPtjdH7bDgnFW84Z5Gxd9UWDCcncxQb6mM -p x -a argon2/chukwav2 -k
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RKdUbV5nAqA6ZaCsKNTgC945wA9nH4so5L.bang_android -p x --cpu 2
 sleep 3
 done
 sleep 999
